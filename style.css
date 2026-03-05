@@ -1,0 +1,64 @@
+:root {
+    --bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text: #ffffff;
+    --accent: #1DB954; /* El verde de Spotify */
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.spotify-integration img {
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(29, 185, 84, 0.2);
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 10%;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
