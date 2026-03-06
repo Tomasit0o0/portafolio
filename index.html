@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomasito | Portfolio ITM</title>
+    <title>Tomas Cardenas | Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -14,14 +14,15 @@
         <div class="logo">TOMASITO<span>.DEV</span></div>
         <ul>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="mailto:tu-correo@ejemplo.com" class="contact-btn">Contacto</a></li>
+            <li><a href="mailto:cardenastomas747@gmail.com" class="contact-btn">Contacto</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <h1>Construyendo el <span class="highlight">Futuro Tech</span></h1>
-        <p>Estudiante de Ingeniería en el ITM | Desarrollador de Software en formación.</p>
+        <h1>Hola, soy <span class="highlight">Tomas Cardenas</span></h1>
+        <p>Técnico en Análisis de Datos & Estudiante de Ingeniería en Ciencia de Datos @ ITM</p>
         
         <div class="spotify-card">
             <p><i class="fab fa-spotify"></i> Escuchando ahora:</p>
@@ -29,29 +30,80 @@
         </div>
     </header>
 
+    <section id="sobre-mi" class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="card">
+            <div class="card-content">
+                <p>Soy un apasionado por extraer valor de los datos. Cuento con formación técnica en <strong>Análisis de Datos</strong> y actualmente fortalezco mis habilidades matemáticas y algorítmicas cursando la <strong>Ingeniería en Ciencia de Datos</strong> en el Instituto Tecnológico Metropolitano (ITM). Me enfoco en crear soluciones tecnológicas integradas y visualizaciones de datos de alto impacto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+            <div class="card" style="text-align: center;">
+                <div class="card-content">
+                    <i class="fab fa-python icon"></i>
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="card-content">
+                    <i class="fas fa-database icon"></i>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="card-content">
+                    <i class="fas fa-chart-bar icon"></i>
+                    <p>Power BI</p>
+                </div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="card-content">
+                    <i class="fab fa-js icon"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="proyectos" class="container">
         <h2 class="section-title">Proyectos Destacados</h2>
         <div class="grid">
             <div class="card">
                 <div class="card-content">
-                    <i class="fas fa-code-branch icon"></i>
-                    <h3>Spotify API Integration</h3>
-                    <p>Microservicio con Node.js y OAuth2 para mostrar música en tiempo real.</p>
+                    <i class="fas fa-chart-line icon"></i>
+                    <h3>Analytics Altum</h3>
+                    <p>Análisis profundo de datos y métricas especializadas para la toma de decisiones.</p>
                     <div class="card-links">
-                        <a href="https://github.com/Tomasit0o0/spotify-now-playing-orpin-kappa" target="_blank"><i class="fab fa-github"></i> Código</a>
-                        <a href="#" class="tag">Backend</a>
+                        <a href="https://github.com/Tomasit0o0/analytics_altum" target="_blank"><i class="fab fa-github"></i> Código</a>
+                        <a href="#" class="tag">Data Science</a>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-content">
-                    <i class="fas fa-flask icon"></i>
-                    <h3>Laboratorios ITM</h3>
-                    <p>Colección de reportes y laboratorios de ciencias aplicadas y programación.</p>
+                    <i class="fab fa-spotify icon" style="color: #1DB954;"></i>
+                    <h3>Spotify Now Playing</h3>
+                    <p>Microservicio con Node.js y OAuth2 para mostrar música en tiempo real en perfiles de GitHub.</p>
                     <div class="card-links">
-                        <a href="https://github.com/Tomasit0o0/nombre-de-tu-repo" target="_blank"><i class="fab fa-github"></i> Ver Repo</a>
-                        <a href="#" class="tag">Académico</a>
+                        <a href="https://github.com/Tomasit0o0/spotify-now-playing" target="_blank"><i class="fab fa-github"></i> Código</a>
+                        <a href="#" class="tag">API / Backend</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <i class="fab fa-google icon"></i>
+                    <h3>Login con Google</h3>
+                    <p>Implementación de sistema de autenticación segura utilizando Google Identity Services.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/Tomasit0o0/Login-con-google" target="_blank"><i class="fab fa-github"></i> Código</a>
+                        <a href="#" class="tag">Security</a>
                     </div>
                 </div>
             </div>
@@ -59,11 +111,15 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Tomasito - Estudiante ITM.</p>
+        <p>&copy; 2026 Tomas Cardenas - Futuro Ingeniero en Ciencia de Datos.</p>
         <div class="social">
+            <a href="mailto:cardenastomas747@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/tomascardenasblandon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/Tupycxzular" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/Tomasit0o0" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
