@@ -3,47 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Portafolio</title>
+    <title>Tomasito | Portfolio ITM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">TU NOMBRE</div>
-            <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="background-blobs"></div>
 
-    <section class="hero">
-        <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
-        <p>Estudiante de Ingeniería @ ITM | Backend & Integraciones</p>
+    <nav>
+        <div class="logo">TOMASITO<span>.DEV</span></div>
+        <ul>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="mailto:tu-correo@ejemplo.com" class="contact-btn">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Construyendo el <span class="highlight">Futuro Tech</span></h1>
+        <p>Estudiante de Ingeniería en el ITM | Cientifico de datos en formación.</p>
         
-        <div class="spotify-integration">
+        <div class="spotify-card">
+            <p><i class="fab fa-spotify"></i> Escuchando ahora:</p>
             <img src="https://spotify-now-playing-orpin-kappa.vercel.app/api/now-playing" alt="Spotify Status">
         </div>
-    </section>
+    </header>
 
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
+    <section id="proyectos" class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
         <div class="grid">
             <div class="card">
-                <h3>Spotify Real-Time API</h3>
-                <p>Integración con la API de Spotify usando OAuth2 y Serverless Functions en Vercel.</p>
-                <a href="URL_DE_TU_GITHUB" class="btn">Ver Código</a>
+                <div class="card-content">
+                    <i class="fas fa-code-branch icon"></i>
+                    <h3>Spotify API Integration</h3>
+                    <p>Microservicio con Node.js y OAuth2 para mostrar música en tiempo real.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/Tomasit0o0/spotify-now-playing-orpin-kappa" target="_blank"><i class="fab fa-github"></i> Código</a>
+                        <a href="#" class="tag">Backend</a>
+                    </div>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Proyecto ITM #1</h3>
-                <p>Descripción breve de tu laboratorio o proyecto de clase.</p>
+                <div class="card-content">
+                    <i class="fas fa-flask icon"></i>
+                    <h3>Laboratorios ITM</h3>
+                    <p>Colección de reportes y laboratorios de ciencias aplicadas y programación.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/Tomasit0o0/nombre-de-tu-repo" target="_blank"><i class="fab fa-github"></i> Ver Repo</a>
+                        <a href="#" class="tag">Académico</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 - Creado por Ti</p>
+        <p>&copy; 2026 Tomasito - Estudiante ITM.</p>
+        <div class="social">
+            <a href="https://github.com/Tomasit0o0" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
