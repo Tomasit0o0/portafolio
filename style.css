@@ -57,8 +57,13 @@ nav a:hover { color: var(--primary); }
 .spotify-card img { border-radius: 12px; margin-top: 10px; max-width: 300px; }
 
 .grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px; padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    justify-content: center; /* Centra las tarjetas si hay pocas */
+    max-width: 900px;         /* Limita el ancho para que no se estiren tanto */
+    margin: 0 auto;          /* Centra el contenedor completo */
 }
 
 .card {
@@ -91,4 +96,16 @@ footer { text-align: center; padding: 50px; border-top: 1px solid var(--border);
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* Aplicamos el mismo degradado que tu nombre */
+    background: linear-gradient(90deg, #1DB954, #00f2fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
